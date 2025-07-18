@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的主页</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>导航栏示例</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的主页</h1>
-        <p>这是一个基于 GitHub Pages 的简单个人主页。</p>
-    </header>
 
-    <main>
-        <section class="about">
-            <h2>关于我</h2>
-            <p>你好，我是 XXX，热爱编程和技术，欢迎访问我的主页！</p>
-        </section>
-
-        <section class="links">
-            <h2>联系我</h2>
-            <ul>
-                <li><a href="https://github.com/你的用户名" target="_blank">GitHub</a></li>
-                <li><a href="mailto:youremail@example.com">Email</a></li>
+<!-- 顶部导航栏 -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">About us ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">History</a></li>
             </ul>
-        </section>
+        </li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-        <section>
-            <button onclick="showMessage()">点击我</button>
-            <p id="message"></p>
-        </section>
-    </main>
+<main>
+    <h1>欢迎来到我的主页</h1>
+    <p>这里是内容区域</p>
+</main>
 
-    <footer>
-        <p>&copy; 2025 我的主页 | Powered by GitHub Pages</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
