@@ -37,6 +37,12 @@ body {
     min-width: 150px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    list-style: none;
 }
 
 .dropdown-menu li a {
@@ -49,7 +55,7 @@ body {
     background-color: #f2f2f2;
 }
 
-/* 显示子菜单时的类 */
+/* 点击后添加 .show 显示 */
 .show {
     display: block;
 }
