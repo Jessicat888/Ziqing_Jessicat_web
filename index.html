@@ -3,36 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>导航栏示例</title>
+<title>导航栏点击展开菜单</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- 顶部导航栏 -->
 <nav class="navbar">
     <ul>
         <li><a href="#">Home</a></li>
         <li class="dropdown">
-            <a href="#">About us ▼</a>
+            <a href="#" onclick="toggleDropdown(event)">About Us ▼</a>
             <ul class="dropdown-menu">
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Welcome</a></li>
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">History</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Work</a></li>
             </ul>
         </li>
         <li><a href="#">Faculty</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Students</a></li>
-        <li><a href="#">Alumni</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
 </nav>
 
 <main>
     <h1>欢迎来到我的主页</h1>
-    <p>这里是内容区域</p>
+    <p>点击导航栏的 “About Us” 查看子菜单。</p>
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
