@@ -1,23 +1,16 @@
-function toggleDropdown(event) {
-    event.preventDefault(); // 阻止默认链接跳转
-    const dropdownMenu = event.target.nextElementSibling;
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
 
-    // 关闭其他已展开的菜单
-    document.querySelectorAll('.dropdown-menu').forEach(menu => {
-        if (menu !== dropdownMenu) {
-            menu.classList.remove('show');
-        }
+    dropdownToggle.addEventListener('click', function (event) {
+        event.preventDefault(); // 阻止链接跳转
+        dropdownMenu.classList.toggle('show');
     });
 
-    // 切换当前菜单
-    dropdownMenu.classList.toggle('show');
-}
-
-// 点击页面其他地方关闭菜单
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('.dropdown')) {
-        document.querySelectorAll('.dropdown-menu').forEach(menu => {
-            menu.classList.remove('show');
-        });
-    }
+    // 点击页面其他地方关闭菜单
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.dropdown')) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
 });
