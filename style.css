@@ -1,56 +1,55 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+}
+
+.navbar {
+    background-color: #0078d7;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
 }
 
-header {
-    background-color: #333;
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
     color: white;
-    padding: 20px 0;
+    text-decoration: none;
+    padding: 14px 20px;
 }
 
-main {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.navbar a:hover {
+    background-color: #005a9e;
 }
 
-h1, h2 {
-    margin-bottom: 10px;
+/* 下拉菜单 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.links ul {
-    list-style: none;
-    padding: 0;
+.dropdown-menu li a {
+    color: #333;
+    padding: 10px 15px;
 }
 
-.links li {
-    margin: 5px 0;
+.dropdown-menu li a:hover {
+    background-color: #f2f2f2;
 }
 
-button {
-    padding: 10px 20px;
-    background: #0078d7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #005a9e;
-}
-
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: #333;
-    color: white;
-    font-size: 14px;
+/* 悬停显示下拉 */
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
