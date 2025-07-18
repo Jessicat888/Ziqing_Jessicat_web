@@ -1,16 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-
-    dropdownToggle.addEventListener('click', function (event) {
-        event.preventDefault(); // 阻止链接跳转
-        dropdownMenu.classList.toggle('show');
+function showSection(id) {
+    console.log("切换到:", id); // 调试用
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none'; // 隐藏所有
     });
-
-    // 点击页面其他地方关闭菜单
-    document.addEventListener('click', function (event) {
-        if (!event.target.closest('.dropdown')) {
-            dropdownMenu.classList.remove('show');
-        }
-    });
-});
+    const target = document.getElementById(id);
+    if (target) {
+        target.style.display = 'block'; // 显示选中
+    } else {
+        console.error("未找到ID:", id);
+    }
+}

@@ -1,61 +1,165 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.top-header {
+    background-color: #2e1a76;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-header .school-name h1 {
+    color: aliceblue;
+    margin: 0;
+    font-size: 130px;
+    align-items: center;
+}
+
+
+
+.top-header .school-name p {
+    color: aliceblue;
+    margin: 0;
+    font-size: 40px;
+}
+
+.language-switch a {
+    color: white;
+    text-decoration: none;
 }
 
 .navbar {
-    background-color: #0078d7;
+    background-color: #4597a8;
 }
 
 .navbar ul {
-    list-style: none;
+    list-style: circle;
+    list-style-position: inside;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    font-size: 25px;
 }
 
 .navbar li {
-    position: relative;
+    margin: 0;
 }
 
 .navbar a {
     display: block;
+    padding: 12px 20px;
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
 }
 
 .navbar a:hover {
-    background-color: #005a9e;
+    background-color: #8c2e8c;
 }
 
-/* 子菜单样式 */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-top: 0;
-    padding: 0;
+/* 主体布局 */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.dropdown-menu li {
-    list-style: none;
+.profile {
+    width: 450px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding-right: 30px;
+    font-size: 20px;
 }
 
-.dropdown-menu li a {
-    color: #333;
-    padding: 10px 15px;
-    display: block;
+.profile img {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.dropdown-menu li a:hover {
-    background-color: #f2f2f2;
+.content {
+    text-align: center;
+    flex: 1;
+    padding-left: 40px;
+    font-size: 30px;
 }
 
-/* 点击后添加 .show 显示 */
-.show {
-    display: block;
+
+
+/* 控制图片和文字整体 */
+.profile-extra {
+    text-align: center;  /* 居中 */
+    margin-top: 40px;    /* 与上方列表间距 */
+}
+
+/* 控制图片大小 */
+.profile-extra img {
+    width: 400px;       /* 调整图片宽度 */
+    height: auto;       /* 等比例缩放 */
+    border-radius: 10px; /* 圆角（可选） */
+}
+
+/* 控制文字大小 */
+.profile-extra p {
+    font-size: 18px;    /* 字体大小 */
+    font-style: italic; /* 斜体（可选） */
+    color: #555;        /* 字体颜色 */
+    margin-top: 10px;   /* 图片和文字间距 */
+}
+
+.about-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.rich-text1 {
+    font-size: 100px !important;
+    font-weight: bold;         /* 粗体 */
+    color: #ff4081 !important;;            /* 字体颜色（粉色示例） */
+    font-family: 'Arial Black', sans-serif; /* 高级字体 */
+    text-transform: uppercase; /* 全大写 */
+    letter-spacing: 10px !important;       /* 字母间距 */
+    margin: 0;                 /* 去掉默认外边距 */
+}
+
+
+.rich-text2 {
+    font-size: 100px !important;
+    font-weight: bold;         /* 粗体 */
+    color: #40ffb6 !important;;            /* 字体颜色（粉色示例） */
+    font-family: 'Arial Black', sans-serif; /* 高级字体 */
+    text-transform: uppercase; /* 全大写 */
+    letter-spacing: 10px !important;       /* 字母间距 */
+    margin: 0;                 /* 去掉默认外边距 */
+}
+
+.rich-text3 {
+    font-size: 100px !important;
+    font-weight: bold;         /* 粗体 */
+    color: #fff940 !important;;            /* 字体颜色（粉色示例） */
+    font-family: 'Arial Black', sans-serif; /* 高级字体 */
+    text-transform: uppercase; /* 全大写 */
+    letter-spacing: 10px !important;       /* 字母间距 */
+    margin: 0;                 /* 去掉默认外边距 */
+}
+
+.rich-text4 {
+    font-size: 100px !important;
+    font-weight: bold;         /* 粗体 */
+    color: #ff4040 !important;;            /* 字体颜色（粉色示例） */
+    font-family: 'Arial Black', sans-serif; /* 高级字体 */
+    text-transform: uppercase; /* 全大写 */
+    letter-spacing: 10px !important;       /* 字母间距 */
+    margin: 0;                 /* 去掉默认外边距 */
 }

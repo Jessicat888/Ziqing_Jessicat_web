@@ -3,31 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>导航栏点击展开菜单</title>
+<title>个人主页 - 动态示例</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
+<script src="script.js"></script>
+
+
 <body>
 
+<!-- 顶部横幅 -->
+<!-- <header class="top-header">
+    <div class="logo">
+        <img src="XJTU.png" alt="Logo" height="200">
+        <div class="school-name">
+            <h1>南开大学</h1>
+            <p>物理科学学院</p>
+        </div>
+    </div>
+    <div class="language-switch">
+        <a href="#">English</a>
+    </div>
+</header> -->
+
+
+
+
+<!-- 顶部横幅 -->
+<header class="top-header">
+    
+    <!-- <div class="logo">
+        <img src="RICH_LADY.png" alt="Logo" height="100"> -->
+
+    <div class="school-name">
+            <h1>💅F U C K I N G R I C H</h1>
+            <!-- <p>Riiiiiiiiiich lady</p> -->
+    </div>
+    <!-- <div class="language-switch">
+        <a href="#"></a>
+    </div> -->
+</header>
+
+
+
+
+<!-- 导航栏 -->
 <nav class="navbar">
     <ul>
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle">About Us ▼</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Work</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Faculty</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="showSection('profile')">WANNA KNOW ME?</a></li>
+        <li><a href="#" onclick="showSection('overview')">HOW TO KNOW ME?</a></li>
+        <li><a href="#" onclick="showSection('research')">WHY CHOOSE ME?</a></li>
+        <li><a href="#" onclick="showSection('publications')">HOW YOU SHOULD BE?</a></li>
+
     </ul>
 </nav>
 
-<main>
-    <h1>欢迎来到我的主页</h1>
-    <p>点击导航栏的 “About Us” 查看子菜单。</p>
+<!-- 主体内容 -->
+<main class="container">
+    <!-- 左侧个人信息 -->
+    <aside class="profile">
+        <img src="profile.jpg" alt="pretty">
+        <h2>Ziqing Guo <span>CEO</span></h2>
+        <p>Doing: Working and loving and chasing</p>
+        <p>Email:<a href="mailto:ziqing.guo@kuleuven.be">ziqing.guo@kuleuven.be</a></p>
+        <!-- <p>email：hujinniu@nankai.edu.cn</p> -->
+        <p> </p>
+    </aside>
+
+    <!-- 右侧动态显示区 -->
+    <section class="content">
+        <div id="profile" class="section">
+            <h3>About me</h3>
+            <ul class="about-list">
+                <li>Height: 168</li>
+                <li>IQ: 200</li>
+                <li>Weight: 🤫</li>
+                <li>Hobby: Being rich</li>
+            </ul>
+            <div class="profile-extra">
+                <p class="rich-text1">RICH</p>
+                <p>A bit empty so I'm here</p>
+            </div>   
+
+        </div>
+
+        <div id="overview" class="section" style="display:none;">
+            <h3>Transfer money to me</h3>
+            <ul>
+                <li><a href="https://www.kbc.be/pay/en?token=9f7f1f21-dbf1-46f5-bba4-d21af4beb9bf-Q_mkwsHCmpq0f_I8r8QKLXXVJgU">account: 5127 8814 0894 4726</a> </li>
+                <li>Any amount is welcome 🤗</li>
+            </ul>
+            <div class="profile-extra">
+                <p class="rich-text2">RICH</p>
+                <p>A bit empty so I'm here</p>
+            </div>   
+        </div>
+
+        <div id="research" class="section" style="display:none;">
+            <h3>If you spent 3 minutes to know me</h3>
+            <p>You will realize</p>
+            <p>You wasted your 3 minutes 😇</p>
+            <div class="profile-extra">
+                <p class="rich-text3">RICH</p>
+                <p>A bit empty so I'm here</p>
+            </div>   
+        </div>
+
+        <div id="publications" class="section" style="display:none;">
+            <h3>I WANCHA</h3>
+            <p>ENJOY YOUR LIFE!!!!!!!!!!!!!!!</p>
+
+            <div class="profile-extra">
+                <p class="rich-text4">RICH</p>
+                <p>A bit empty so I'm here</p>
+            </div>   
+        </div>
+    </section>
 </main>
 
-<script src="script.js"></script>
 </body>
 </html>
