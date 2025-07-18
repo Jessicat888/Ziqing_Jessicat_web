@@ -5,7 +5,6 @@ body {
 
 .navbar {
     background-color: #0078d7;
-    overflow: hidden;
 }
 
 .navbar ul {
@@ -30,7 +29,7 @@ body {
     background-color: #005a9e;
 }
 
-/* 下拉菜单 */
+/* 子菜单样式 */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -43,13 +42,14 @@ body {
 .dropdown-menu li a {
     color: #333;
     padding: 10px 15px;
+    display: block;
 }
 
 .dropdown-menu li a:hover {
     background-color: #f2f2f2;
 }
 
-/* 悬停显示下拉 */
-.dropdown:hover .dropdown-menu {
+/* 显示子菜单时的类 */
+.show {
     display: block;
 }
